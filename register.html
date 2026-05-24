@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription - A Plus Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="brand">
+    <img src="images/logo.png" alt="A Plus Academy logo">
+    <div>
+      <h1>A Plus Academy</h1>
+      <p>Inscription en ligne</p>
+    </div>
+  </a>
+
+  <nav class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="arabic.html" class="language">العربية</a>
+  </nav>
+
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<section class="form-section reveal">
+  <h2>Inscription en ligne</h2>
+  <p>Veuillez remplir le formulaire ci-dessous. L’école vous contactera rapidement.</p>
+
+  <form action="https://formsubmit.co/aplusacademy.inscription@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Nouvelle inscription A Plus Academy">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="thankyou.html">
+
+    <label>Nom complet de l'enfant</label>
+    <input type="text" name="Nom enfant" placeholder="Nom complet" required>
+
+    <label>Date de naissance</label>
+    <input type="date" name="Date naissance" required>
+
+    <label>Nom du parent</label>
+    <input type="text" name="Nom parent" placeholder="Nom du parent" required>
+
+    <label>Téléphone</label>
+    <input type="tel" name="Téléphone" placeholder="Ex : 53700008" required>
+
+    <label>Email</label>
+    <input type="email" name="Email" placeholder="email@gmail.com">
+
+    <label>Niveau demandé</label>
+    <select name="Niveau demandé" required>
+      <option value="">Choisir</option>
+      <option>1ère année</option>
+      <option>2ème année</option>
+      <option>3ème année</option>
+      <option>4ème année</option>
+      <option>5ème année</option>
+      <option>6ème année</option>
+    </select>
+
+    <label>Message supplémentaire</label>
+    <textarea name="Message" placeholder="Votre message..."></textarea>
+
+    <button type="submit">Envoyer l'inscription</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 A Plus Academy. Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
